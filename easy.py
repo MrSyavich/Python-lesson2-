@@ -50,8 +50,22 @@ print(set(list_3))
 
 # если элемент кратен двум, то разделить его на 4, если не кратен, то умножить на два.
 
-list_a = [4, 2, 8, 5, 12, 6]
-if (list_a // 2):
-    print(list_a[:] * 4)
+#list_a = [4, 2, 8, 5, 12, 6]
+#if (list_a // 2):
+    ## print(list_a[:] * 2)
+
+
+
+list = [4, 2, 8, 5, 12, 6]
+res = []
+print(list)
+for i in list:
+    if i % 2 == 0:
+        res.append(int(i // 4))
 else:
-    print(list_a[:] * 2)
+    res.append(i * 2)
+    print(res)
+
+
+
+
